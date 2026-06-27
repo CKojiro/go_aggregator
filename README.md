@@ -91,19 +91,33 @@ gator unfollow https://blog.boot.dev/index.xml
 Reset the database:
 
 gator reset
+
 Available Commands
+
 register <username> — Create a new user.
+
 login <username> — Log in as an existing user.
+
 users — List all registered users.
+
 addfeed <name> <url> — Add a new RSS feed.
+
 feeds — List all feeds.
+
 follow <url> — Follow a feed.
+
 following — List feeds followed by the current user.
+
 unfollow <url> — Stop following a feed.
+
 agg <duration> — Continuously fetch new posts from feeds.
+
 browse [limit] — Display the newest posts.
+
 reset — Delete all users and associated data.
+
 Notes
+
 The application stores its configuration in ~/.gatorconfig.json.
 Feed aggregation stores new posts in PostgreSQL.
 Running agg will continue fetching feeds until the program is stopped (Ctrl+C).
